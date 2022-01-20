@@ -1,0 +1,5 @@
+<ul>
+    {% for document in document_list %}
+    <li><a href="{% url 'documents:detail' document.id %}">{{ document.title }}</a></li>
+    {% endfor %}
+</ul>
